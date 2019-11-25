@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">DSC meetup KIBABII UNIVERSITY</string>
+    <string name="app_name">DSC Kibu</string>
+    <string name="title_android">Android</string>
+    <string name="title_web">Web</string>
+    <string name="title_hacking">Hacking</string>
+    <string name="title_ml">Ml</string>
 </resources>
