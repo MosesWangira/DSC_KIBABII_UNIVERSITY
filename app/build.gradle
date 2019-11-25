@@ -25,6 +25,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+
+    dynamicFeatures = [":Android", ":Web", ":Hacking", ":Ml"]
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+
 }
 
 dependencies {
