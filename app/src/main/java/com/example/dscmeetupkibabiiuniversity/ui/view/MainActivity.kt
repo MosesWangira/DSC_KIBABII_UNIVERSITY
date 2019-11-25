@@ -12,6 +12,7 @@ import com.example.dscmeetupkibabiiuniversity.ui.adapter.DynamicModuleRecyclerVi
 import com.example.dscmeetupkibabiiuniversity.ui.model.DynamicModule
 import com.google.android.play.core.splitinstall.SplitInstallManager
 import com.google.android.play.core.splitinstall.SplitInstallManagerFactory
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
 

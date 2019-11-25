@@ -16,19 +16,29 @@ class Login : AppCompatActivity(), View.OnClickListener {
         supportActionBar!!.hide()
 
         btn_login.setOnClickListener(this)
+        login_register.setOnClickListener(this)
 
     }
 
     override fun onClick(v: View?) {
-        when (v?.id){
+        return when (v?.id){
             R.id.btn_login -> {
                 login()
             }
+            R.id.login_register -> {
+                startActivity(Intent(this,Register::class.java))
+            }
+            else -> return
         }
 
     }
 
     private fun login() {
+
+        /*
+        * TODO : Add our firebase logic here please use kotlin synthetics
+        *
+        * */
         startActivity(Intent(this,MainActivity::class.java))
     }
 
