@@ -44,7 +44,7 @@ object Activities {
     object AndroidModule {
 
         object Android : AddressableActivity {
-            override val className = "com.androidstudy.movies.ui.views.activities.MovieActivity"
+            override val className = "com.dsckibu.android.Android"
         }
 
     }
@@ -70,7 +70,7 @@ object Activities {
     object MlModule {
 
         object ML : AddressableActivity {
-            override val className = "com.androidstudy.movies.ui.views.activities.MovieActivity"
+            override val className = "com.dsckibu.ml.Ml"
         }
 
     }
@@ -83,7 +83,7 @@ object Activities {
     object HackingModule {
 
         object Hacking : AddressableActivity {
-            override val className = "com.androidstudy.movies.ui.views.activities.MovieActivity"
+            override val className = "com.dsckibu.hacking.Hacking"
         }
 
     }

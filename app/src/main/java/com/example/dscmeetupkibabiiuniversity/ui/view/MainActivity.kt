@@ -1,13 +1,18 @@
 package com.example.dscmeetupkibabiiuniversity.ui.view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import com.custom.sliderimage.logic.SliderImage
 import com.dsckibu.core.util.*
 import com.example.dscmeetupkibabiiuniversity.R
 import com.example.dscmeetupkibabiiuniversity.ui.adapter.DynamicModuleRecyclerViewAdapter
 import com.example.dscmeetupkibabiiuniversity.ui.model.DynamicModule
 import com.google.android.play.core.splitinstall.SplitInstallManager
 import com.google.android.play.core.splitinstall.SplitInstallManagerFactory
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
 
@@ -22,6 +27,18 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        // Create slider image component
+        val sliderImage = SliderImage(this)
+
+        // add images URLs
+        val images = listOf(
+            "https://picsum.photos/200",
+            "https://picsum.photos/200",
+            "https://picsum.photos/200")
+
+        // Add image URLs to sliderImage
+        slider.setItems(images)
 
         splitInstallManager = SplitInstallManagerFactory.create(this)
         setup()
@@ -108,5 +125,24 @@ class MainActivity : AppCompatActivity() {
         )
 
         return models
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId){
+            R.id.about_app -> {
+                startActivity(Intent(this,MainActivity::class.java))
+                return true
+            }
+            R.id.profile ->{
+                startActivity(Intent(this,Profile::class.java))
+                return true
+            }
+           else -> super.onOptionsItemSelected(item)
+        }
     }
 }
