@@ -20,7 +20,7 @@ class SplashScreen : AppCompatActivity() {
         dsc!!.startAnimation(myanim)
 
 
-        val i = Intent(this, Login::class.java)
+        val i = Intent(this, Register::class.java)
         //Async task
         val timer = object : Thread() {
             override fun run() {

@@ -10,6 +10,9 @@
     android:background="#ededed"
     tools:showIn="@layout/activity_main">
 
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -37,6 +37,12 @@
 
 <!--    </com.google.android.material.appbar.AppBarLayout>-->
 
+    <com.custom.sliderimage.logic.SliderImage
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="8dp" />
+
     <include layout="@layout/content_main" />
 
 
