@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity() {
         setup()
     }
 
+
     private fun setup() {
         val layoutManager = CustomGridLayoutManager(this, 2)
         layoutManager.setScrollEnabled(false)
