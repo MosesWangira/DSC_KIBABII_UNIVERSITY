@@ -27,12 +27,11 @@ android {
     }
 
 
-    dynamicFeatures = [":Android", ":Web", ":Hacking", ":Ml"]
+    dynamicFeatures = [":Android", ":Web", ":Hacking", ":Ml", ":Ui"]
     compileOptions {
         sourceCompatibility = 1.8
         targetCompatibility = 1.8
     }
-
 
 }
 
@@ -49,5 +48,6 @@ dependencies {
     api 'com.google.android.play:core:1.6.3'
 
     implementation project(path: ':core')
+    
     api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
