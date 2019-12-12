@@ -41,6 +41,7 @@ class MainActivity : AppCompatActivity() {
         slider.setItems(images)
 
         splitInstallManager = SplitInstallManagerFactory.create(this)
+
         setup()
     }
 

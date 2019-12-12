@@ -8,7 +8,7 @@ import android.content.Intent
  * Helpers to start activities in a modularized world.
  */
 
-private const val PACKAGE_NAME = "com.jamesnyakus"
+private const val PACKAGE_NAME = "com.example.dscmeetupkibabiiuniversity"
 
 
 /**

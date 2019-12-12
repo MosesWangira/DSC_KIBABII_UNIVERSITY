@@ -1,42 +1,24 @@
 # \[ 🚧 Work in progress 👷‍♀️⛏👷🔧️👷🔧 🚧 \] 
 
-(ESS) is mobile app that provide employees with access to their personal records and Payroll details. ESS features include allowing employees to change their own contact details, family members and banking information and benefits. ESS also allows administrative tasks like applying for a leave, reviewing of timesheet, inquiring about available loan programs, requesting for overtime payment, viewing of compensation history, and submitting of reimbursement slips. With the emergence of ESS, employees are able to transact with their Human Resource office without physical appearance which is considered irrelevant in some transactions.
+This app helps students share their ideas before meet up to enable them identify what to discusss in the meet up
 
-#### The Following are the core features that the ess app will be having.
+#### The Following are the core features that the DSC Kibabii meetup app will be having.
 
-  1. Profile Management.
+  1. Android Module.
 
-  2. Absence Services.
+  2. Web Module.
 
-     * View leave balance.
-     * Apply leave.
-     * Cancel leave.
+  3. Machine Learning.
 
-  3. Claim Management:  User can use this module to fill in the expense claims like ‘conveyance reimbursements’ and can attach the scanned copy of  bills and submit the same.
+  4. Ethical Hacking.
 
-  4. Generic Services
-      * View Benefits — View various benefits available to the user.
-      * View Policy documents.
-      * Pay Slip download.
+## Photos
 
-  5. Manager Services.
-      * Approve leave.
-      * Reject Leave.
-      * Request for More information.
-      * View Direct reportee charts.
-    
-  6. Time and Labour management: Employees can fill the timesheet from the app.
-  
-  7. Learning and Training.
-  
-      *  View training calendar based on the roles.
-      *  Apply for trainings.
-      *  View applied training.
-      *  View completed trainings.
-      *  Approve trainings submitted by the direct reportees.
-      *  Annual review assessment.
-  8. Recruitment Section :
-    This Section will list the various opening within the organization. This can be mobile version of the existing recruitment portal.
+<img src="https://github.com/jamesnyakush/DSC_KIBABII_UNIVERSITY/blob/core/photos/1.jpeg" width="280"/>   <img src="https://github.com/jamesnyakush/DSC_KIBABII_UNIVERSITY/blob/core/photos/2.jpeg" width="280"/>   <img src="https://github.com/jamesnyakush/DSC_KIBABII_UNIVERSITY/blob/core/photos/3.jpeg" width="280"/>
+
+
+
+
   
   
  
