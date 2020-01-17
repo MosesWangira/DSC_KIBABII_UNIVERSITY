@@ -12,6 +12,12 @@ This app helps students share their ideas before meet up to enable them identify
 
   4. Ethical Hacking.
 
+## Photos
+
+<img src="https://github.com/jamesnyakush/DSC_KIBABII_UNIVERSITY/blob/core/photos/1.jpeg" width="280"/>   <img src="https://github.com/jamesnyakush/DSC_KIBABII_UNIVERSITY/blob/core/photos/2.jpeg" width="280"/>   <img src="https://github.com/jamesnyakush/DSC_KIBABII_UNIVERSITY/blob/core/photos/3.jpeg" width="280"/>
+
+
+
 
   
   
