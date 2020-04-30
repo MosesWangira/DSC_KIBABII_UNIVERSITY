@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.example.dscmeetupkibabiiuniversity.ui.onboard.viewmodel.OnBoardViewModel" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        tools:context=".ui.onboard.fragment.Register">
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/dsc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/login_email"
+                style="@style/authTextInputEditTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/layout_border"
+                android:drawablePadding="@dimen/margin_normal"
+                android:hint="@string/enter_email"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:textStyle="normal" />
+
+
+            <EditText
+                android:id="@+id/login_password"
+                style="@style/authTextInputEditTextPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/layout_border"
+                android:drawablePadding="@dimen/margin_normal"
+                android:hint="@string/enter_password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:padding="12dp" />
+
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/login_btn"
+                android:onClick="@{viewmodel::register}"
+                android:text="@string/register"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/need_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{viewmodel::goToLogin}"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/already_have_an_account" />
+
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
