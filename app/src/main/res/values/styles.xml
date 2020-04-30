@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -53,52 +53,15 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
 
-    <style name="profileDetailsLayout" parent="parent">
-        <item name="android:layout_marginTop">20dp</item>
+    <style name="authTextInputEditTextPhone" >
+        <item name="android:drawableLeft">@drawable/ic_phone_number</item>
+        <item name="android:drawableStart">@drawable/ic_phone_number</item>
     </style>
 
-    <style name="profileDetailsImage">
-        <item name="android:layout_width">40dp</item>
-        <item name="android:layout_height">40dp</item>
-        <item name="android:layout_alignParentTop">true</item>
-        <item name="android:layout_alignParentLeft">true</item>
+    <style name="authTextInputEditTextPin">
+        <item name="android:drawableLeft">@drawable/ic_pin</item>
+        <item name="android:drawableStart">@drawable/ic_pin</item>
     </style>
 
-    <style name="profileDetailsTextMain" parent="viewParent">
-        <item name="android:textColor">@color/blackTextColor</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:layout_marginLeft">10dp</item>
-    </style>
-
-    <style name="profileDetailsMiniText" parent="viewParent">
-        <item name="android:layout_alignParentBottom">true</item>
-        <item name="android:textColor">@color/blackTextColor</item>
-        <item name="android:textSize">14sp</item>
-        <item name="android:layout_marginLeft">10dp</item>
-    </style>
-
-    <style name="proifleDetailsView">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">2dp</item>
-        <item name="android:background">@color/profileAccentColor</item>
-        <item name="android:layout_marginTop">5dp</item>
-    </style>
-
-    <style name="profileStyledBackButton">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@drawable/profile_back_button</item>
-        <item name="android:textAlignment">center</item>
-        <item name="android:paddingLeft">30dp</item>
-        <item name="android:paddingRight">50dp</item>
-        <item name="android:paddingTop">10dp</item>
-        <item name="android:paddingBottom">10dp</item>
-        <item name="android:drawableLeft">@drawable/back_to_home_button</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_alignParentTop">true</item>
-        <item name="android:minWidth">250dp</item>
-    </style>
 
 </resources>

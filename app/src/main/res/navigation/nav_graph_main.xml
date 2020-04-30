@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/android">
+
+    <fragment
+        android:id="@+id/android"
+        android:name="com.dsckibu.android.ui.fragment.Android"
+        android:label="Android"
+        app:moduleName="@string/title_android"
+        tools:layout="@layout/android_fragment" />
+
+    <fragment
+        android:id="@+id/web"
+        android:name="com.dsckibu.web.ui.Web"
+        android:label="Web"
+        app:moduleName="@string/title_web"
+        tools:layout="@layout/web_fragment" />
+
+    <fragment
+        android:id="@+id/ml"
+        android:name="com.dsckibu.ml.ui.Ml"
+        android:label="Web"
+        app:moduleName="@string/title_ml"
+        tools:layout="@layout/ml_fragment" />
+
+    <fragment
+        android:id="@+id/hacking"
+        android:name="com.dsckibu.hacking.ui.Hacking"
+        android:label="Web"
+        app:moduleName="@string/title_hacking"
+        tools:layout="@layout/hacking_fragment" />
+</navigation>

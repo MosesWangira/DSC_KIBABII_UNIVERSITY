@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.view.Profile"></activity>
-        <activity android:name=".ui.view.Register" />
-        <activity android:name=".ui.view.Login" />
-        <activity android:name=".ui.view.MainActivity" />
-        <activity android:name=".ui.view.SplashScreen">
+
+        <activity android:name=".ui.home.MainActivity" />
+        <activity android:name=".ui.onboard.activity.Onboarding"/>
+
+        <activity android:name=".ui.splash.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

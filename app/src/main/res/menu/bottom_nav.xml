@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/android"
+        android:icon="@drawable/ic_android"
+        android:title="@string/android_meet" />
+    <item
+        android:id="@+id/web"
+        android:icon="@drawable/ic_web"
+        android:title="@string/web_meet" />
+    <item
+        android:id="@+id/ml"
+        android:icon="@drawable/ic_machine_learning"
+        android:title="@string/ml" />
+    <item
+        android:id="@+id/hacking"
+        android:icon="@drawable/ic_guy_fawkes_mask"
+        android:title="@string/hacking" />
+
+</menu>

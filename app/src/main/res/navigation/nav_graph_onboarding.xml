@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_onboarding"
+    app:startDestination="@id/login2">
+
+    <fragment
+        android:id="@+id/login2"
+        android:name="com.example.dscmeetupkibabiiuniversity.ui.onboard.fragment.Login"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/actionToRegister"
+            app:destination="@id/register" />
+        <action
+            android:id="@+id/actionToForgotPass"
+            app:destination="@id/forgotPass" />
+        <action
+            android:id="@+id/actionReportIssue"
+            app:destination="@id/reportIssue" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.dscmeetupkibabiiuniversity.ui.onboard.fragment.Register"
+        android:label="register_fragment"
+        tools:layout="@layout/register_fragment" >
+        <action
+            android:id="@+id/actionRegisterToLogin"
+            app:destination="@id/login2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgotPass"
+        android:name="com.example.dscmeetupkibabiiuniversity.ui.onboard.fragment.ForgotPass"
+        android:label="forgot_pass_fragment"
+        tools:layout="@layout/forgot_pass_fragment" />
+    <fragment
+        android:id="@+id/reportIssue"
+        android:name="com.example.dscmeetupkibabiiuniversity.ui.onboard.fragment.ReportIssue"
+        android:label="report_issue_fragment"
+        tools:layout="@layout/report_issue_fragment" />
+</navigation>
