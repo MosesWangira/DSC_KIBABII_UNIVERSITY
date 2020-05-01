@@ -14,7 +14,7 @@ internal class SplashScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-//        supportActionBar!!.hide()
+        supportActionBar!!.hide()
 
         val myanim = AnimationUtils.loadAnimation(this, R.anim.mytransition)
         logo!!.startAnimation(myanim)

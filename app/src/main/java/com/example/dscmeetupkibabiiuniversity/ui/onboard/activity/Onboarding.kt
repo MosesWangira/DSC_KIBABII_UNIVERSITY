@@ -10,6 +10,6 @@ internal class Onboarding : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.onboarding_activity)
 
-//        supportActionBar!!.hide()
+        supportActionBar!!.hide()
     }
 }
