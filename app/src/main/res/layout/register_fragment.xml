@@ -5,7 +5,7 @@
 
         <variable
             name="viewmodel"
-            type="com.example.dscmeetupkibabiiuniversity.ui.onboard.viewmodel.OnBoardViewModel" />
+            type="com.dsc.kibu.ui.onboard.viewmodel.OnBoardViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -33,16 +33,17 @@
 
 
             <EditText
-                android:id="@+id/login_email"
+                android:id="@+id/login_e"
                 style="@style/authTextInputEditTextPhone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="@drawable/layout_border"
                 android:drawablePadding="@dimen/margin_normal"
+                android:text="@={viewmodel.email}"
                 android:hint="@string/enter_email"
                 android:importantForAutofill="no"
-                android:inputType="textEmailAddress"
+                android:inputType="text"
                 android:padding="12dp"
                 android:textStyle="normal" />
 
@@ -56,6 +57,7 @@
                 android:background="@drawable/layout_border"
                 android:drawablePadding="@dimen/margin_normal"
                 android:hint="@string/enter_password"
+                android:text="@={viewmodel.password}"
                 android:importantForAutofill="no"
                 android:inputType="textPassword"
                 android:padding="12dp" />

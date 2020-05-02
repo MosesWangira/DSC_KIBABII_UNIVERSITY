@@ -7,28 +7,28 @@
 
     <fragment
         android:id="@+id/android"
-        android:name="com.dsckibu.android.ui.fragment.Android"
+        android:name="com.dsc.kibu.android.fragment.Android"
         android:label="Android"
         app:moduleName="@string/title_android"
         tools:layout="@layout/android_fragment" />
 
     <fragment
         android:id="@+id/web"
-        android:name="com.dsckibu.web.ui.Web"
+        android:name="com.dsc.kibu.web.Web"
         android:label="Web"
         app:moduleName="@string/title_web"
         tools:layout="@layout/web_fragment" />
 
     <fragment
         android:id="@+id/ml"
-        android:name="com.dsckibu.ml.ui.Ml"
+        android:name="com.dsc.kibu.ui.Ml"
         android:label="Web"
         app:moduleName="@string/title_ml"
         tools:layout="@layout/ml_fragment" />
 
     <fragment
         android:id="@+id/hacking"
-        android:name="com.dsckibu.hacking.ui.Hacking"
+        android:name="com.dsc.kibu.hacking.Hacking"
         android:label="Web"
         app:moduleName="@string/title_hacking"
         tools:layout="@layout/hacking_fragment" />
