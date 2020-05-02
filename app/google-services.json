@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "990519503915",
-    "firebase_url": "https://dsc-meetup-kibabii-university.firebaseio.com",
-    "project_id": "dsc-meetup-kibabii-university",
-    "storage_bucket": "dsc-meetup-kibabii-university.appspot.com"
+    "project_number": "84669803788",
+    "firebase_url": "https://dsc-kibu-1bc18.firebaseio.com",
+    "project_id": "dsc-kibu-1bc18",
+    "storage_bucket": "dsc-kibu-1bc18.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:990519503915:android:e12f93e97e56efcb9c0e6e",
+        "mobilesdk_app_id": "1:84669803788:android:2310f0c2c37ef8979a6d29",
         "android_client_info": {
-          "package_name": "com.example.dscmeetupkibabiiuniversity"
+          "package_name": "com.dsc.kibu"
         }
       },
       "oauth_client": [
         {
-          "client_id": "990519503915-sput2d7gqakipb99skk9vm8gteeh71qk.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.dscmeetupkibabiiuniversity",
-            "certificate_hash": "8324cdf5c5e048fc2c65d94cd9ad17933c41a497"
-          }
-        },
-        {
-          "client_id": "990519503915-dmief6b7uufd41po59d5htia2jcg9a1m.apps.googleusercontent.com",
+          "client_id": "84669803788-rh8ihcmkpppjov3dsrgjud4d2big5s5r.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA4CI7ChkD2CxDRWGQijLXC2FHs9c30fOg"
+          "current_key": "AIzaSyARwJMWP9IhgMO-We_nSuYXLoUIrRv8K4w"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "990519503915-dmief6b7uufd41po59d5htia2jcg9a1m.apps.googleusercontent.com",
+              "client_id": "84669803788-rh8ihcmkpppjov3dsrgjud4d2big5s5r.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

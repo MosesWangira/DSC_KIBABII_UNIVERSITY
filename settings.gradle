@@ -1,2 +1,2 @@
-include ':app', ':core', ':Android', ':Web', ':Hacking', ':Ml', ':Ui'
+include ':app', ':core', ':Android', ':Web', ':Hacking', ':Ml'
 rootProject.name='DSC meetup KIBABII UNIVERSITY'
