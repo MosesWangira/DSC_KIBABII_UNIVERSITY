@@ -1,15 +1,14 @@
 package com.dsc.kibu.ui.onboard.viewmodel
 
-import android.content.Intent
 import android.view.View
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.navigation.Navigation
 import com.dsc.kibu.core.EmptyResource
+import com.dsc.kibu.core.logError
 import com.dsc.kibu.core.toast
 import com.dsc.kibu.data.model.UserData
 import com.dsc.kibu.data.repository.OnboardRepository
-import com.dsc.kibu.ui.home.MainActivity
 import com.dsc.kibu.ui.onboard.fragment.LoginDirections
 import com.dsc.kibu.ui.onboard.fragment.RegisterDirections
 
@@ -49,10 +48,21 @@ internal class OnBoardViewModel : ViewModel() {
     }
 
     fun register(view: View) {
-
-        Intent(view.context, MainActivity::class.java).also {
-            view.context.startActivity(it)
+        if (email.isNullOrEmpty() || password.isNullOrEmpty()) {
+            view.context?.toast("Email prefix is required and password")
+            return
         }
+        signUpResult.value = EmptyResource.loading()
+
+        onboardRepository.createUserWithNicknameAndPassword(email!!, password!!)
+            .addOnSuccessListener {
+                signUpResult.value = EmptyResource.success()
+            }
+            .addOnFailureListener {
+                onSignupError(it)
+            }
+
+
     }
 
     fun goToLogin(view: View) {
@@ -73,5 +83,11 @@ internal class OnBoardViewModel : ViewModel() {
     fun reportIssue(view: View) {
         val action = LoginDirections.actionReportIssue()
         Navigation.findNavController(view).navigate(action)
+    }
+
+    private fun onSignupError(exception: Exception? = null) {
+        "Signup Error: $exception".logError()
+        onboardRepository.signOut()
+        signUpResult.value = EmptyResource.error(exception)
     }
 }
